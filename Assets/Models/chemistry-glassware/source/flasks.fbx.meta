@@ -3,7 +3,22 @@ guid: 56c0ee66662b860819406546986c4e51
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lab_beaker_a
+    second: {fileID: 2100000, guid: 48f05537736642736a0aaed719fea38d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lab_cylinder_a
+    second: {fileID: 2100000, guid: 15524238cdc4419d081a2518ff49c9a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lab_erlenmeyer_a
+    second: {fileID: 2100000, guid: 4ff0ad27e1478134bac3457ba542d1b2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
