@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class MovableObject : MonoBehaviour
 {
     public List<MoveLocation> moveLocations;
-    public MoveLocation initialLocation;
     public MoveSelector moveSelector;
 
     void Start()
