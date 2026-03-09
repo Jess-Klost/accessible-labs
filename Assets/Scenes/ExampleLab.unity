@@ -875,7 +875,6 @@ MonoBehaviour:
   moveLocations:
   - {fileID: 314575253}
   - {fileID: 132446093}
-  initialLocation: {fileID: 132446093}
   moveSelector: {fileID: 468085186437512569}
 --- !u!4 &1552856433
 Transform:
@@ -1100,6 +1099,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1386001075341137655, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5181708168660647025, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
+      propertyPath: m_isRightToLeft
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
