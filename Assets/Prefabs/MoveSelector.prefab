@@ -33,7 +33,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.024902344}
   m_SizeDelta: {x: 0, y: 28}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &965197009121490179
@@ -88,6 +88,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveSelector
   moveButton: {fileID: 9199677524756493630}
   locationDropdown: {fileID: 6115155624997685436}
+  movableObject: {fileID: 0}
 --- !u!1 &1076556112487907198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,8 +1133,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 21
+  m_fontSizeBase: 21
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
