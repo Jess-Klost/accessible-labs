@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 240888687}
   - component: {fileID: 240888686}
   - component: {fileID: 240888689}
+  - component: {fileID: 240888690}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -302,6 +303,18 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &240888690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240888685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d797effa514543bda3e1d767d90135b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextToSpeechManager
 --- !u!1 &269273770
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +415,25 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e33013d526ff4424f8720a0397893839, type: 3}
+--- !u!1 &305685923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6902014601162071009, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
+  m_PrefabInstance: {fileID: 468085186437512567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &305685929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305685923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a2a849c3f57daf9aa3830dac7b5377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReadableComponent
+  label: Move
+  textComponent: {fileID: 0}
 --- !u!1 &314575248
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,6 +447,7 @@ GameObject:
   - component: {fileID: 314575250}
   - component: {fileID: 314575249}
   - component: {fileID: 314575253}
+  - component: {fileID: 314575254}
   m_Layer: 0
   m_Name: Scale
   m_TagString: Untagged
@@ -530,6 +563,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MovementLocation
   locationName: Scale
   movePoint: {fileID: 269273771}
+--- !u!114 &314575254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314575248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de0815a0d83b3584bb8248534536d460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WebSpeechAPI_TTS
+--- !u!1 &373525865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4593914415293657007, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
+  m_PrefabInstance: {fileID: 468085186437512567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &373525870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373525865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6fa9304ba81aaacd856d1355d0da0ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReadableDropdown
+  label: Move Selection
+  textComponent: {fileID: 0}
+  dropdown: {fileID: 0}
+  initialLabel: 
 --- !u!1 &384967367
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +825,25 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &556995627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5711129144367195130, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
+  m_PrefabInstance: {fileID: 468085186437512567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &556995630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556995627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a2a849c3f57daf9aa3830dac7b5377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReadableComponent
+  label: Test
+  textComponent: {fileID: 1887543212}
 --- !u!1 &835949357
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +978,17 @@ Transform:
   - {fileID: 384967368}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1887543212 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7298153176342239351, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
+  m_PrefabInstance: {fileID: 468085186437512567}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &2074735935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,10 +1225,23 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: -17
       objectReference: {fileID: 0}
+    - target: {fileID: 6493973442349776733, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
+      propertyPath: m_text
+      value: Option A
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6902014601162071009, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 305685929}
+    - targetCorrespondingSourceObject: {fileID: 4593914415293657007, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 373525870}
+    - targetCorrespondingSourceObject: {fileID: 5711129144367195130, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 556995630}
   m_SourcePrefab: {fileID: 100100000, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
 --- !u!224 &468085186437512568 stripped
 RectTransform:
