@@ -10,7 +10,7 @@ public class ReadableComponent : MonoBehaviour, ISelectHandler
     protected void SpeakUI(string label)
     {
         Debug.Log("TTS: " + label);
-        UAP_CustomTTS.Speak(label, 1f);
+        UAP_CustomTTS.Speak(label, 0.7f);
     }
 
     public void OnSelect(BaseEventData eventData)
