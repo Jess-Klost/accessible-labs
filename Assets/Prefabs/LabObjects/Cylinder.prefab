@@ -48,7 +48,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 857b2d10b569be4208c22e32f027c847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovableObject
-  moveLocations: []
+  moveLocations:
+  - {fileID: 0}
+  - {fileID: 0}
   moveSelector: {fileID: 5445488551509220204}
 --- !u!136 &6857425080891098434
 CapsuleCollider:
@@ -358,122 +360,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2686410113232983035, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5005514785941347318, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5005514785941347318, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5181708168660647025, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-      propertyPath: m_isRightToLeft
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5969790288738978287, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5969790288738978287, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5969790288738978287, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -17
-      objectReference: {fileID: 0}
-    - target: {fileID: 6493973442349776733, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-      propertyPath: m_text
-      value: Option A
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6902014601162071009, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2793571494914716176}
-    - targetCorrespondingSourceObject: {fileID: 4593914415293657007, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7635217015951551506}
-    - targetCorrespondingSourceObject: {fileID: 5711129144367195130, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2394787615241263833}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
---- !u!114 &2205811720108758575 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7298153176342239351, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-  m_PrefabInstance: {fileID: 8922934569519107672}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
---- !u!1 &2602025057801622969 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6902014601162071009, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-  m_PrefabInstance: {fileID: 8922934569519107672}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2793571494914716176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2602025057801622969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09a2a849c3f57daf9aa3830dac7b5377, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ReadableComponent
-  label: Move
-  textComponent: {fileID: 0}
---- !u!1 &3789392082873773474 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5711129144367195130, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-  m_PrefabInstance: {fileID: 8922934569519107672}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2394787615241263833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3789392082873773474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09a2a849c3f57daf9aa3830dac7b5377, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ReadableComponent
-  label: Test
-  textComponent: {fileID: 2205811720108758575}
---- !u!1 &4905683767632503287 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4593914415293657007, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
-  m_PrefabInstance: {fileID: 8922934569519107672}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7635217015951551506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4905683767632503287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6fa9304ba81aaacd856d1355d0da0ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ReadableDropdown
-  label: Move Selection
-  textComponent: {fileID: 0}
-  dropdown: {fileID: 0}
-  initialLabel: 
 --- !u!114 &5445488551509220204 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -5744654361538816716, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
