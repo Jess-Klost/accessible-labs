@@ -220,7 +220,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2446880730025616925, guid: 8e9f0a3137751d027a8e7cf9fc9cfb4c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 803391228}
   m_SourcePrefab: {fileID: 100100000, guid: 8e9f0a3137751d027a8e7cf9fc9cfb4c, type: 3}
 --- !u!1 &240888685
 GameObject:
@@ -499,6 +502,25 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &803391224 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2446880730025616925, guid: 8e9f0a3137751d027a8e7cf9fc9cfb4c, type: 3}
+  m_PrefabInstance: {fileID: 175130352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &803391228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803391224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443c29b45600cd349aedbd370af1d140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReadableValue
+  valueText: {fileID: 0}
+  context: The scale reads {value}
 --- !u!1 &835949357
 GameObject:
   m_ObjectHideFlags: 0
