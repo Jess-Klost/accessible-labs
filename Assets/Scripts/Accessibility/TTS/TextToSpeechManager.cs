@@ -5,7 +5,7 @@ using UnityEngine;
 /// </summary>
 public class TextToSpeechManager : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
         UAP_CustomTTS.InitializeCustomTTS<WebSpeechAPI_TTS>();
     }
