@@ -2,16 +2,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class ReadableComponent : MonoBehaviour, ISelectHandler
+public class ReadableComponent : Readable, ISelectHandler
 {
     public string label;
     public TMP_Text textComponent;
-
-    protected void SpeakUI(string label)
-    {
-        Debug.Log("TTS: " + label);
-        UAP_CustomTTS.Speak(label, 0.7f);
-    }
 
     public void OnSelect(BaseEventData eventData)
     {

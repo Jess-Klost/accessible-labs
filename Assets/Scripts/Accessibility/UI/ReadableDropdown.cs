@@ -8,7 +8,7 @@ public class ReadableDropdown : ReadableComponent, ISubmitHandler, ISelectHandle
     public TMP_Dropdown dropdown;
     public string initialLabel;
 
-    void Start()
+    void Awake()
     {
         if (dropdown == null)
             dropdown = GetComponent<TMP_Dropdown>();
@@ -16,7 +16,6 @@ public class ReadableDropdown : ReadableComponent, ISubmitHandler, ISelectHandle
 
     public new void OnSelect(BaseEventData eventData)
     {
-        Debug.Log("OnSelectDrop");
         string foundLabel = "";
         if (textComponent != null)
         {
