@@ -2,11 +2,15 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.EventSystems;
 
+/// <summary>
+/// ReadableComponent with dropdown specific functions. Reads out "expanded" 
+/// when expanded and adds the context variable "{items}" which is the amount
+/// of items in the dropdown. 
+/// </summary>
 [RequireComponent(typeof(TMP_Dropdown))]
 public class ReadableDropdown : ReadableComponent, ISubmitHandler, ISelectHandler
 {
     public TMP_Dropdown dropdown;
-    public string initialLabel;
 
     void Awake()
     {
@@ -14,23 +18,16 @@ public class ReadableDropdown : ReadableComponent, ISubmitHandler, ISelectHandle
             dropdown = GetComponent<TMP_Dropdown>();
     }
 
-    public new void OnSelect(BaseEventData eventData)
-    {
-        string foundLabel = "";
-        if (textComponent != null)
-        {
-            foundLabel = textComponent.text;
-        }
-        else if (label != "")
-        {
-            foundLabel = label;
-        }
-
-        SpeakUI("Collapsed list with " + dropdown.options.Count + " items " + foundLabel);
-    }
-
     public void OnSubmit(BaseEventData eventData)
     {
         SpeakUI("Expanded");
+    }
+
+    protected override string GetFullLabel()
+    {
+        // Get filled in label from base Readable class and fill in dropdown 
+        // specific variables
+        return base.GetFullLabel().Replace("{items}",
+         dropdown.options.Count.ToString());
     }
 }

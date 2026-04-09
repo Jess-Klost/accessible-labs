@@ -502,6 +502,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DefaultSelection
   defaultSelection: {fileID: 63772923}
+--- !u!114 &394358838 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2435211304372891909, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
+  m_PrefabInstance: {fileID: 1879319888}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &511420417
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,8 +732,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 443c29b45600cd349aedbd370af1d140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ReadableValue
-  valueText: {fileID: 0}
-  context: The scale reads {value}
+  label: {fileID: 803391229}
+  context: The scale reads {label}
+--- !u!114 &803391229 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3339849583593602520, guid: 8e9f0a3137751d027a8e7cf9fc9cfb4c, type: 3}
+  m_PrefabInstance: {fileID: 175130352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803391224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &835949357
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,6 +974,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921943591}
   m_CullTransparentMesh: 1
+--- !u!114 &1161761721 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4340768102351155753, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
+  m_PrefabInstance: {fileID: 1879319888}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &1350693771
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,6 +1021,17 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1651980726 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2205811720108758575, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
+  m_PrefabInstance: {fileID: 1879319888}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &1796577556
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1124,14 @@ PrefabInstance:
       propertyPath: m_VertexColorAlwaysGammaSpace
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3864011189197940474, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
+      propertyPath: label
+      value: 
+      objectReference: {fileID: 1161761721}
+    - target: {fileID: 3864011189197940474, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
+      propertyPath: context
+      value: '{label} button'
+      objectReference: {fileID: 0}
     - target: {fileID: 5371388142942703226, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
       propertyPath: m_Name
       value: Cylinder
@@ -1092,6 +1144,22 @@ PrefabInstance:
       propertyPath: 'moveLocations.Array.data[1]'
       value: 
       objectReference: {fileID: 1969551831}
+    - target: {fileID: 6941229976391920582, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
+      propertyPath: label
+      value: 
+      objectReference: {fileID: 1651980726}
+    - target: {fileID: 8962107600254825893, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
+      propertyPath: label
+      value: 
+      objectReference: {fileID: 394358838}
+    - target: {fileID: 8962107600254825893, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
+      propertyPath: context
+      value: Collapsed dropdown with {items} items {label}
+      objectReference: {fileID: 0}
+    - target: {fileID: 8962107600254825893, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
+      propertyPath: dropdown
+      value: 
+      objectReference: {fileID: 63772923}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
