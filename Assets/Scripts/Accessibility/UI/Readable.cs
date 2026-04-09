@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using UnityEditor.EditorTools;
 
 /// <summary>
 /// Base class for components that read UI elements 
