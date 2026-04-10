@@ -4,8 +4,9 @@ using UnityEngine.EventSystems;
 
 /// <summary>
 /// ReadableComponent with dropdown specific functions. Reads out "expanded" 
-/// when expanded and adds the context variable "{items}" which is the amount
-/// of items in the dropdown. 
+/// when expanded. Adds the context variable "{items}" which is the amount
+/// of items in the dropdown and "{selected}" which is the currently selected
+/// item. 
 /// </summary>
 [RequireComponent(typeof(TMP_Dropdown))]
 public class ReadableDropdown : ReadableComponent, ISubmitHandler, ISelectHandler
@@ -28,6 +29,7 @@ public class ReadableDropdown : ReadableComponent, ISubmitHandler, ISelectHandle
         // Get filled in label from base Readable class and fill in dropdown 
         // specific variables
         return base.GetFullLabel().Replace("{items}",
-         dropdown.options.Count.ToString());
+         dropdown.options.Count.ToString()).Replace("{selected}",
+         dropdown.captionText.text);
     }
 }
