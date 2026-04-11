@@ -49,7 +49,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac7ae02aea375c48091e7769cfe0c924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveSelector
-  moveButton: {fileID: 0}
   locationDropdown: {fileID: 6115155624997685436}
   movableObject: {fileID: 0}
 --- !u!1001 &5212582147403030763
@@ -122,7 +121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8264086574824050845, guid: fe5b86d64538cbdeebc38cc2baae4815, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.0623
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8264086574824050845, guid: fe5b86d64538cbdeebc38cc2baae4815, type: 3}
       propertyPath: m_AnchoredPosition.y

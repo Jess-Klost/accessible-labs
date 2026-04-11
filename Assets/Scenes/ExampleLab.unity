@@ -790,9 +790,21 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 240888687}
+    - target: {fileID: 4513601448570951086, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513601448570951086, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5371388142942703226, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
       propertyPath: m_Name
       value: Cylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574866226606542439, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 6336050957744669663, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
       propertyPath: 'moveLocations.Array.data[0]'
