@@ -316,7 +316,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1156,6 +1156,10 @@ PrefabInstance:
     - target: {fileID: 2365463275950952295, guid: f534a93ebbc0b4a0ca3d642394da4469, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3365608293766254370, guid: f534a93ebbc0b4a0ca3d642394da4469, type: 3}
+      propertyPath: m_text
+      value: Speech Rate
       objectReference: {fileID: 0}
     - target: {fileID: 3658313810860701167, guid: f534a93ebbc0b4a0ca3d642394da4469, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
