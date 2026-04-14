@@ -1,21 +1,13 @@
-using UnityEngine;
 using UnityEngine.EventSystems;
-using TMPro;
 
+/// <summary>
+/// Reads out label when the UI component is selected.
+/// </summary>
 public class ReadableComponent : Readable, ISelectHandler
 {
-    public string label;
-    public TMP_Text textComponent;
 
     public void OnSelect(BaseEventData eventData)
     {
-        if (textComponent != null)
-        {
-            SpeakUI(textComponent.text);
-        }
-        else if (label != "")
-        {
-            SpeakUI(label);
-        }
+        SpeakUI(GetFullLabel());
     }
 }

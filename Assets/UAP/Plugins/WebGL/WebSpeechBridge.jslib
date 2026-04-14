@@ -2,7 +2,12 @@ mergeInto(LibraryManager.library, {
 
 	//SpeakWeb: function (strPointer, languageCodeStrPtr, speakRate) 
 	SpeakWeb: function (strPointer, languageCodeStrPtr, rate) 
-	{		
+	{
+		if (!navigator.userActivation.hasBeenActive) {
+    		console.log("Tried to use SpeakWeb without user activation");
+    		return;
+  		}
+
 		// Create JavaSCript string from Unity's string pointer
 		var str = UTF8ToString(strPointer);
 		var lang = UTF8ToString(languageCodeStrPtr);
@@ -28,5 +33,4 @@ mergeInto(LibraryManager.library, {
 	{
 		return (window.speechSynthesis.speaking || window.speechSynthesis.pending);
 	}
-
 });

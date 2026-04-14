@@ -144,7 +144,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -342,7 +342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1386001075341137655, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0146
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1386001075341137655, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -359,6 +359,10 @@ PrefabInstance:
     - target: {fileID: 1386001075341137655, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5181708168660647025, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
+      propertyPath: m_text
+      value: Move
       objectReference: {fileID: 0}
     - target: {fileID: 9199677524756493630, guid: 094c3b7c60002530ea12864ed379ff5c, type: 3}
       propertyPath: m_Navigation.m_Mode
