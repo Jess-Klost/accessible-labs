@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.0146, y: 0}
-  m_SizeDelta: {x: 165, y: 84.3}
+  m_SizeDelta: {x: 70, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &-5744654361538816716
 MonoBehaviour:
@@ -89,7 +89,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8264086574824050845, guid: fe5b86d64538cbdeebc38cc2baae4815, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8264086574824050845, guid: fe5b86d64538cbdeebc38cc2baae4815, type: 3}
       propertyPath: m_LocalPosition.x
@@ -142,10 +142,6 @@ PrefabInstance:
     - target: {fileID: 8617095872009719620, guid: fe5b86d64538cbdeebc38cc2baae4815, type: 3}
       propertyPath: m_Name
       value: Dropdown
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617095872009719620, guid: fe5b86d64538cbdeebc38cc2baae4815, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9142176559309381844, guid: fe5b86d64538cbdeebc38cc2baae4815, type: 3}
       propertyPath: m_text

@@ -804,7 +804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3356063149688897698, guid: 4ecc4ae1d2689038b86ddc9e57cd21c8, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3356063149688897698, guid: 4ecc4ae1d2689038b86ddc9e57cd21c8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -966,14 +966,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4513601448570951086, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696551389857005102, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 40
-      objectReference: {fileID: 0}
     - target: {fileID: 5371388142942703226, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
       propertyPath: m_Name
       value: Cylinder
@@ -990,10 +982,6 @@ PrefabInstance:
       propertyPath: 'moveLocations.Array.data[1]'
       value: 
       objectReference: {fileID: 1969551831}
-    - target: {fileID: 7611833776665954350, guid: a80d0254f64fcb7ec92fd09f3b710db7, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.000011444092
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
