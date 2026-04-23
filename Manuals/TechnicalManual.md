@@ -17,11 +17,18 @@ It also contains other technical information needed for development.
 2. [Lab Systems](#lab-systems)
    1. [Overview](#overview-2)
    2. [Classes](#classes-1)
+      - [DigitalScale](#digitalscale)
+      - [WeightedItem](#weighteditem)
+      - [MovableObject](#movableobject)
+      - [MoveLocation](#movelocation)
+      - [MoveSelector](#moveselector)
 3. [Building and Deployment](#building-and-deployment)
 
 
 ## Screen Reader System
 ### Overview
+This system includes classes that allow UI elements (buttons, text, dropdowns, etc.) to be read by text to speech (TTS). Generally, these components
+are attached to the game object containing the UI element.  
 
 ### Classes
 #### Readable
@@ -142,8 +149,69 @@ to read text at anytime rather than only when it changes, which is preferred.*
 
 ## Lab Systems
 ### Overview
+These systems include any classes used for objects or manipulating objects in experiments.
 
-### Classes 
+### Classes
+#### DigitalScale
+*Inherits from: [MonoBehavior](https://docs.unity3d.com/6000.3/Documentation/ScriptReference/MonoBehaviour.html)*
+
+##### Fields 
+| Field  | Description |
+| ------------- | ------------- |
+|   |  |
+
+#### WeightedItem
+*Inherits from: [MonoBehavior](https://docs.unity3d.com/6000.3/Documentation/ScriptReference/MonoBehaviour.html)*
+
+##### Fields 
+| Field  | Description |
+| ------------- | ------------- |
+|   |  |
+
+#### MovableObject
+*Inherits from: [MonoBehavior](https://docs.unity3d.com/6000.3/Documentation/ScriptReference/MonoBehaviour.html)*
+
+Allows the user to move an object to various preset locations. 
+
+##### Fields 
+| Field  | Description |
+| ------------- | ------------- |
+| public List<[MoveLocation](#movelocation)> moveLocations | List of locations the object can be moved to. |
+| public [MoveSelector](#moveselector) moveSelector | The MoveSelector that is used to move this object. This MoveSelector will be automatically populated with moveLocations. |
+
+##### Methods
+| Method | Description |
+| ------------- | ------------- |
+| public void MoveTo(int index) | Moves the object to the MoveLocation at the index in moveLocations. |
+
+#### MoveLocation
+*Inherits from: [MonoBehavior](https://docs.unity3d.com/6000.3/Documentation/ScriptReference/MonoBehaviour.html)*
+
+A location where a MovableObject can be moved to.
+
+##### Fields 
+| Field  | Description |
+| ------------- | ------------- |
+| public string locationName  | The name of the location. Used for populating the MoveSelector dropdown. |
+| public [Transform](https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Transform.html) movePoint | The position the object should be moved to. | 
+
+#### MoveSelector
+*Inherits from: [MonoBehavior](https://docs.unity3d.com/6000.3/Documentation/ScriptReference/MonoBehaviour.html)*
+
+Allows a dropdown to move a [MovableObject](#movelocation) to its available [MoveLocations](#movelocation).
+
+##### Fields 
+| Field  | Description |
+| ------------- | ------------- |
+| public  [TMP_Dropdown](https://docs.unity3d.com/Packages/com.unity.textmeshpro@2.0/api/TMPro.TMP_Dropdown.html) locationDropdown | Dropdown for controlling movement. |
+| public [MovableObject](#movableobject) movableObject | The MovableObject for that is moved by this MoveSelector. |
+
+##### Methods
+| Method | Description |
+| ------------- | ------------- |
+| public void PopulateDropdown(List<[MoveLocation](#movelocation)> moveLocations) | Populates locationDropdown with moveLocations. |
+| private void OnDropdownValueChanged(int index) | Called when the locationDropdown's value is changed. Moves movableObject to the newly selected location. |  
+
 
 ## Building and Deployment
 
