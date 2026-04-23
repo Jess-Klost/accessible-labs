@@ -198,7 +198,7 @@ A location where a MovableObject can be moved to.
 #### MoveSelector
 *Inherits from: [MonoBehavior](https://docs.unity3d.com/6000.3/Documentation/ScriptReference/MonoBehaviour.html)*
 
-Allows a dropdown to move a [MovableObject](#movelocation) to its available [MoveLocations](#movelocation).
+Allows a dropdown to move a [MovableObject](#movableobject) to its available [MoveLocations](#movelocation).
 
 ##### Fields 
 | Field  | Description |
