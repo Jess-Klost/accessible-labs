@@ -23,6 +23,8 @@ It also contains other technical information needed for development.
       - [MoveLocation](#movelocation)
       - [MoveSelector](#moveselector)
 3. [Building and Deployment](#building-and-deployment)
+   1. [Creating a Web Build](#creating-a-web-build)
+   2. [Deploying the Build](#deploying-the-build)
 
 
 ## Screen Reader System
@@ -214,4 +216,25 @@ Allows a dropdown to move a [MovableObject](#movableobject) to its available [Mo
 
 
 ## Building and Deployment
+### Creating a Web Build
+1. Switch to the `webgl-build` branch.
+    ```shell
+    git checkout webgl-build
+    ```
+2. Merge in the branch you would like to update the build with.
+    ```shell
+    git pull origin <branch>
+    ```
+3. Open the Unity project
+4. Select File&rarr;Build Profiles
+5. Ensure Web is the active platform
+6. Select Build and select a folder to for the build (Unity generally disallows building at the root of the project folder)
+
+### Deploying the build
+1. Ensure you are on the `webgl-build` branch.
+2. Locate the Build folder within the new build you created
+3. Replace the files within the project Build folder with the files from the new build's Build folder
+4. Push changes to `webgl-build`
+
+Once changes are pushed, the GitHub Pages will update with the new build. 
 
